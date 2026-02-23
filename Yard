@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ETRA Pro Services — Yard Signs & Business Cards</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700;900&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<style>
+
+:root {
+–black:   #0A0A0A;
+–char:    #141414;
+–char2:   #1C1C1C;
+–steel:   #282828;
+–ash:     #909090;
+–mist:    #DEDAD4;
+–cream:   #F0EBE3;
+–white:   #F7F4EF;
+–gold:    #C8A96E;
+–gold-lt: #DFBF88;
+–gold-dk: #9B7840;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+background: #161616;
+font-family: ‘Barlow’, sans-serif;
+padding: 48px 40px;
+color: var(–mist);
+}
+
+.page-header {
+text-align: center;
+margin-bottom: 64px;
+padding-bottom: 32px;
+border-bottom: 1px solid #252525;
+}
+.page-header h1 {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 52px;
+color: var(–white);
+letter-spacing: .06em;
+}
+.page-header p {
+font-size: 11px;
+color: var(–ash);
+letter-spacing: .28em;
+text-transform: uppercase;
+margin-top: 8px;
+}
+
+.section-label {
+font-size: 10px;
+font-weight: 700;
+letter-spacing: .42em;
+text-transform: uppercase;
+color: var(–gold);
+margin-bottom: 32px;
+display: flex;
+align-items: center;
+gap: 14px;
+}
+.section-label::before { content: ‘’; width: 32px; height: 1px; background: var(–gold); flex-shrink: 0; }
+
+.section-group { margin-bottom: 80px; }
+
+.print-row {
+display: flex;
+gap: 32px;
+flex-wrap: wrap;
+align-items: flex-start;
+}
+
+.card-wrap {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+
+.size-note {
+font-size: 9px;
+color: #444;
+letter-spacing: .18em;
+text-transform: uppercase;
+text-align: center;
+}
+
+/* ══════════════════════════════════════
+YARD SIGNS
+Real 24”×18” ratio = 4:3
+Rendered at 600×450px — plenty of room
+══════════════════════════════════════ */
+
+.yard-sign {
+width: 600px;
+height: 450px;
+position: relative;
+overflow: hidden;
+box-shadow: 0 24px 64px rgba(0,0,0,.7);
+flex-shrink: 0;
+}
+
+/* ── V1: Dark / Gold accent ── */
+.ys1 { background: var(–black); }
+.ys1-top-bar {
+position: absolute;
+top: 0; left: 0; right: 0;
+height: 5px;
+background: linear-gradient(90deg, var(–gold-dk), var(–gold), var(–gold-dk));
+}
+.ys1-right-bar {
+position: absolute;
+top: 0; bottom: 0; right: 0;
+width: 5px;
+background: linear-gradient(180deg, var(–gold-dk), var(–gold), var(–gold-dk));
+}
+.ys1-inner {
+position: absolute;
+inset: 30px 42px 30px 36px;
+display: grid;
+grid-template-rows: auto 1fr auto auto;
+gap: 12px;
+}
+.ys1-logo { display: flex; align-items: center; gap: 12px; }
+.ys1-etra {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 52px;
+color: var(–white);
+letter-spacing: .08em;
+line-height: 1;
+}
+.ys1-sub {
+font-size: 9px;
+font-weight: 700;
+letter-spacing: .38em;
+text-transform: uppercase;
+color: var(–gold);
+margin-top: 4px;
+}
+.ys1-headline {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 118px;
+color: var(–white);
+letter-spacing: .03em;
+line-height: .88;
+align-self: center;
+}
+.ys1-headline span { color: var(–gold); }
+.ys1-services {
+font-size: 11px;
+font-weight: 600;
+letter-spacing: .2em;
+text-transform: uppercase;
+color: #555;
+}
+.ys1-cta {
+display: flex;
+align-items: flex-end;
+justify-content: space-between;
+padding-top: 10px;
+border-top: 1px solid #242424;
+}
+.ys1-phone {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 40px;
+color: var(–gold);
+letter-spacing: .06em;
+line-height: 1;
+}
+.ys1-right-info { text-align: right; }
+.ys1-web {
+font-size: 13px;
+font-weight: 700;
+letter-spacing: .18em;
+color: var(–mist);
+text-transform: uppercase;
+}
+.ys1-loc {
+font-size: 9px;
+font-weight: 500;
+letter-spacing: .18em;
+color: #444;
+text-transform: uppercase;
+margin-top: 3px;
+}
+.ys1-free {
+font-size: 8.5px;
+font-weight: 700;
+letter-spacing: .22em;
+text-transform: uppercase;
+color: #3a3a3a;
+margin-top: 2px;
+}
+
+/* ── V2: Gold background, bold CTA ── */
+.ys2 {
+background: var(–gold);
+position: relative;
+}
+.ys2::before {
+content: ‘’;
+position: absolute; inset: 0;
+background: repeating-linear-gradient(
+-45deg, transparent, transparent 24px,
+rgba(0,0,0,.04) 24px, rgba(0,0,0,.04) 25px
+);
+}
+.ys2-border {
+position: absolute;
+inset: 10px;
+border: 2px solid rgba(0,0,0,.18);
+pointer-events: none;
+z-index: 1;
+}
+.ys2-bg-word {
+position: absolute;
+right: -24px; bottom: -24px;
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 280px;
+color: rgba(0,0,0,.055);
+letter-spacing: .05em;
+line-height: 1;
+pointer-events: none;
+z-index: 0;
+}
+.ys2-inner {
+position: absolute;
+inset: 28px 36px;
+display: grid;
+grid-template-rows: auto 1fr auto auto;
+gap: 10px;
+z-index: 2;
+}
+.ys2-logo { display: flex; align-items: center; gap: 10px; }
+.ys2-etra {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 40px;
+color: var(–black);
+letter-spacing: .08em;
+line-height: 1;
+}
+.ys2-sub {
+font-size: 8px;
+font-weight: 700;
+letter-spacing: .38em;
+text-transform: uppercase;
+color: rgba(0,0,0,.5);
+margin-top: 3px;
+}
+.ys2-headline {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 128px;
+color: var(–black);
+letter-spacing: .03em;
+line-height: .86;
+align-self: center;
+}
+.ys2-services {
+font-size: 10.5px;
+font-weight: 700;
+letter-spacing: .2em;
+text-transform: uppercase;
+color: rgba(0,0,0,.45);
+}
+.ys2-cta {
+display: flex;
+align-items: flex-end;
+justify-content: space-between;
+padding-top: 10px;
+border-top: 1px solid rgba(0,0,0,.15);
+}
+.ys2-phone {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 44px;
+color: var(–black);
+letter-spacing: .06em;
+line-height: 1;
+}
+.ys2-right { text-align: right; }
+.ys2-web {
+font-size: 13px;
+font-weight: 700;
+letter-spacing: .18em;
+color: var(–black);
+text-transform: uppercase;
+}
+.ys2-loc {
+font-size: 9px;
+font-weight: 600;
+letter-spacing: .18em;
+color: rgba(0,0,0,.45);
+text-transform: uppercase;
+margin-top: 3px;
+}
+.ys2-free {
+font-size: 8.5px;
+font-weight: 700;
+letter-spacing: .22em;
+text-transform: uppercase;
+color: rgba(0,0,0,.35);
+margin-top: 2px;
+}
+
+/* ── V3: Split dark / gold ── */
+.ys3 {
+background: var(–black);
+display: flex;
+}
+.ys3-left {
+flex: 1;
+padding: 30px 30px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+position: relative;
+}
+.ys3-divider {
+position: absolute;
+top: 20px; bottom: 20px; right: 0;
+width: 2px;
+background: linear-gradient(180deg, transparent, var(–gold) 30%, var(–gold) 70%, transparent);
+}
+.ys3-right {
+width: 220px;
+background: var(–gold);
+padding: 30px 24px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+position: relative;
+overflow: hidden;
+flex-shrink: 0;
+}
+.ys3-right::before {
+content: ‘’;
+position: absolute; inset: 0;
+background: repeating-linear-gradient(
+45deg, transparent, transparent 16px,
+rgba(0,0,0,.04) 16px, rgba(0,0,0,.04) 17px
+);
+}
+.ys3-logo { display: flex; align-items: center; gap: 10px; }
+.ys3-etra {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 44px;
+color: var(–white);
+letter-spacing: .07em;
+line-height: 1;
+}
+.ys3-prosub {
+font-size: 8px;
+font-weight: 700;
+letter-spacing: .36em;
+text-transform: uppercase;
+color: var(–gold);
+margin-top: 3px;
+}
+.ys3-headline {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 86px;
+color: var(–white);
+letter-spacing: .03em;
+line-height: .88;
+}
+.ys3-headline span { color: var(–gold); }
+.ys3-services {
+font-size: 9.5px;
+font-weight: 600;
+letter-spacing: .16em;
+text-transform: uppercase;
+color: #484848;
+line-height: 1.9;
+}
+/* right panel */
+.ys3-cta-top { position: relative; z-index: 1; }
+.ys3-cta-eyebrow {
+font-size: 7.5px;
+font-weight: 700;
+letter-spacing: .38em;
+text-transform: uppercase;
+color: rgba(0,0,0,.45);
+margin-bottom: 6px;
+}
+.ys3-phone {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 34px;
+color: var(–black);
+letter-spacing: .05em;
+line-height: 1;
+}
+.ys3-cta-mid {
+position: relative; z-index: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 8px;
+}
+.ys3-mid-rule { width: 32px; height: 1px; background: rgba(0,0,0,.25); }
+.ys3-web {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 28px;
+color: var(–black);
+letter-spacing: .08em;
+text-align: center;
+}
+.ys3-cta-bottom { position: relative; z-index: 1; }
+.ys3-tagline {
+font-family: ‘Playfair Display’, Georgia, serif;
+font-style: italic;
+font-size: 11px;
+color: rgba(0,0,0,.5);
+line-height: 1.5;
+}
+.ys3-free {
+font-size: 7.5px;
+font-weight: 700;
+letter-spacing: .22em;
+text-transform: uppercase;
+color: rgba(0,0,0,.35);
+margin-top: 6px;
+}
+
+/* ══════════════════════════════════════
+BUSINESS CARDS
+Standard 3.5” × 2” ratio
+Rendered at 490px × 280px
+══════════════════════════════════════ */
+
+.biz-card {
+width: 490px;
+height: 280px;
+position: relative;
+overflow: hidden;
+box-shadow: 0 16px 48px rgba(0,0,0,.7);
+flex-shrink: 0;
+}
+
+/* ── BC V1: Dark premium ── */
+.bc1 {
+background: var(–black);
+border: 1px solid rgba(200,169,110,.2);
+}
+.bc1::before {
+content: ‘’;
+position: absolute;
+top: 0; left: 0; right: 0;
+height: 3px;
+background: linear-gradient(90deg, var(–gold-dk), var(–gold-lt), var(–gold-dk));
+}
+.bc1-inner {
+position: absolute;
+inset: 24px 28px 22px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.bc1-top { display: flex; align-items: center; gap: 10px; }
+.bc1-etra {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 36px;
+color: var(–white);
+letter-spacing: .07em;
+line-height: 1;
+}
+.bc1-sub {
+font-size: 7px;
+font-weight: 700;
+letter-spacing: .36em;
+text-transform: uppercase;
+color: var(–gold);
+margin-top: 3px;
+}
+.bc1-mid {
+display: flex;
+flex-direction: column;
+gap: 3px;
+}
+.bc1-name {
+font-size: 13px;
+font-weight: 700;
+letter-spacing: .1em;
+color: var(–white);
+text-transform: uppercase;
+}
+.bc1-title {
+font-size: 8px;
+font-weight: 600;
+letter-spacing: .28em;
+text-transform: uppercase;
+color: var(–gold);
+}
+.bc1-bottom {
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+padding-top: 12px;
+border-top: 1px solid #1e1e1e;
+}
+.bc1-contact { display: flex; flex-direction: column; gap: 3px; }
+.bc1-info {
+font-size: 9px;
+color: var(–ash);
+letter-spacing: .08em;
+display: flex;
+align-items: center;
+gap: 6px;
+}
+.bc1-info em {
+font-style: normal;
+color: var(–mist);
+}
+.bc1-dot { color: #333; font-size: 6px; }
+.bc1-tagline {
+font-family: ‘Playfair Display’, Georgia, serif;
+font-style: italic;
+font-size: 9px;
+color: #363636;
+text-align: right;
+line-height: 1.5;
+}
+
+/* ── BC V1 BACK ── */
+.bc1-back {
+background: var(–gold);
+position: relative;
+}
+.bc1-back::before {
+content: ‘’;
+position: absolute; inset: 0;
+background: repeating-linear-gradient(
+-45deg, transparent, transparent 18px,
+rgba(0,0,0,.04) 18px, rgba(0,0,0,.04) 19px
+);
+}
+.bc1-back-inner {
+position: absolute;
+inset: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 6px;
+z-index: 1;
+}
+.bc1-back-etra {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 72px;
+color: var(–black);
+letter-spacing: .12em;
+line-height: 1;
+}
+.bc1-back-sub {
+font-size: 8px;
+font-weight: 700;
+letter-spacing: .44em;
+text-transform: uppercase;
+color: rgba(0,0,0,.5);
+}
+.bc1-back-border {
+position: absolute;
+inset: 10px;
+border: 1px solid rgba(0,0,0,.15);
+pointer-events: none;
+}
+
+/* ── BC V2: Cream / light ── */
+.bc2 { background: var(–cream); }
+.bc2::before {
+content: ‘’;
+position: absolute;
+bottom: 0; left: 0; right: 0;
+height: 3px;
+background: linear-gradient(90deg, var(–gold-dk), var(–gold), var(–gold-dk));
+}
+.bc2-left {
+position: absolute;
+top: 0; left: 0; bottom: 0;
+width: 180px;
+background: var(–black);
+padding: 22px 22px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.bc2-left::after {
+content: ‘’;
+position: absolute;
+top: 0; bottom: 0; right: 0;
+width: 3px;
+background: linear-gradient(180deg, var(–gold-dk), var(–gold), var(–gold-dk));
+}
+.bc2-etra {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 44px;
+color: var(–white);
+letter-spacing: .07em;
+line-height: 1;
+}
+.bc2-prosub {
+font-size: 7px;
+font-weight: 700;
+letter-spacing: .38em;
+text-transform: uppercase;
+color: var(–gold);
+}
+.bc2-tagline-left {
+font-family: ‘Playfair Display’, Georgia, serif;
+font-style: italic;
+font-size: 9px;
+color: #444;
+line-height: 1.5;
+}
+.bc2-right {
+position: absolute;
+top: 0; left: 183px; right: 0; bottom: 0;
+padding: 22px 22px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.bc2-name {
+font-size: 13px;
+font-weight: 700;
+letter-spacing: .1em;
+color: var(–black);
+text-transform: uppercase;
+}
+.bc2-title {
+font-size: 8px;
+font-weight: 600;
+letter-spacing: .26em;
+text-transform: uppercase;
+color: var(–gold-dk);
+margin-top: 3px;
+}
+.bc2-contact { display: flex; flex-direction: column; gap: 4px; }
+.bc2-info {
+font-size: 9.5px;
+color: #555;
+letter-spacing: .06em;
+}
+.bc2-info strong { color: var(–black); font-weight: 600; }
+
+/* ── BC V2 BACK ── */
+.bc2-back { background: var(–black); }
+.bc2-back-inner {
+position: absolute;
+inset: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 8px;
+}
+.bc2-back-rule-top {
+width: 40px; height: 1px;
+background: linear-gradient(90deg, transparent, var(–gold));
+}
+.bc2-back-rule-bot {
+width: 40px; height: 1px;
+background: linear-gradient(90deg, var(–gold), transparent);
+}
+.bc2-back-etra {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 64px;
+color: var(–white);
+letter-spacing: .12em;
+line-height: 1;
+}
+.bc2-back-sub {
+font-size: 7.5px;
+font-weight: 700;
+letter-spacing: .44em;
+text-transform: uppercase;
+color: var(–gold);
+}
+.bc2-back-contact {
+font-size: 8.5px;
+font-weight: 600;
+letter-spacing: .18em;
+color: var(–ash);
+margin-top: 4px;
+}
+
+/* ── BC V3: Full gold front ── */
+.bc3 { background: var(–gold); position: relative; }
+.bc3::before {
+content: ‘’;
+position: absolute; inset: 0;
+background: repeating-linear-gradient(
+45deg, transparent, transparent 20px,
+rgba(0,0,0,.03) 20px, rgba(0,0,0,.03) 21px
+);
+}
+.bc3-inner {
+position: absolute;
+inset: 20px 26px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+z-index: 1;
+}
+.bc3-top { display: flex; align-items: center; gap: 10px; }
+.bc3-etra {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 36px;
+color: var(–black);
+letter-spacing: .08em;
+line-height: 1;
+}
+.bc3-sub {
+font-size: 7px;
+font-weight: 700;
+letter-spacing: .36em;
+text-transform: uppercase;
+color: rgba(0,0,0,.5);
+margin-top: 3px;
+}
+.bc3-mid {
+display: flex;
+flex-direction: column;
+gap: 2px;
+}
+.bc3-name {
+font-size: 13px;
+font-weight: 700;
+letter-spacing: .1em;
+color: var(–black);
+text-transform: uppercase;
+}
+.bc3-title {
+font-size: 7.5px;
+font-weight: 600;
+letter-spacing: .26em;
+text-transform: uppercase;
+color: rgba(0,0,0,.5);
+}
+.bc3-bottom {
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+padding-top: 10px;
+border-top: 1px solid rgba(0,0,0,.18);
+}
+.bc3-contact { display: flex; flex-direction: column; gap: 3px; }
+.bc3-info {
+font-size: 9px;
+font-weight: 600;
+color: rgba(0,0,0,.65);
+letter-spacing: .06em;
+}
+.bc3-info strong { color: var(–black); }
+.bc3-tagline {
+font-family: ‘Playfair Display’, Georgia, serif;
+font-style: italic;
+font-size: 9px;
+color: rgba(0,0,0,.4);
+text-align: right;
+line-height: 1.5;
+}
+
+/* ── BC V3 BACK ── */
+.bc3-back { background: var(–black); }
+.bc3-back-inner {
+position: absolute;
+inset: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 5px;
+}
+.bc3-back-etra {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 68px;
+color: var(–gold);
+letter-spacing: .12em;
+line-height: 1;
+}
+.bc3-back-sub {
+font-size: 7.5px;
+font-weight: 700;
+letter-spacing: .44em;
+text-transform: uppercase;
+color: var(–ash);
+}
+.bc3-back-rule { width: 44px; height: 1px; background: var(–gold); opacity: .4; margin: 4px 0; }
+.bc3-back-web {
+font-size: 10px;
+font-weight: 700;
+letter-spacing: .22em;
+color: var(–gold);
+text-transform: uppercase;
+}
+.bc3-back-phone {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 24px;
+color: var(–mist);
+letter-spacing: .1em;
+}
+
+/* PRINT NOTES */
+.print-notes {
+max-width: 900px;
+margin: 56px auto 0;
+padding: 28px 32px;
+background: #111;
+border: 1px solid #222;
+border-left: 3px solid var(–gold);
+}
+.print-notes h3 {
+font-family: ‘Bebas Neue’, Impact, sans-serif;
+font-size: 22px;
+color: var(–gold);
+letter-spacing: .06em;
+margin-bottom: 14px;
+}
+.print-notes ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.print-notes li {
+font-size: 12px;
+color: var(–ash);
+line-height: 1.7;
+padding-left: 18px;
+position: relative;
+}
+.print-notes li::before {
+content: ‘◈’;
+position: absolute; left: 0;
+color: var(–gold); font-size: 7px; top: 5px;
+}
+
+/* LOGO MARK SIZING */
+.lm-lg { width: 44px; height: 44px; flex-shrink: 0; }
+.lm-md { width: 32px; height: 32px; flex-shrink: 0; }
+.lm-sm { width: 24px; height: 24px; flex-shrink: 0; }
+
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>ETRA PRO SERVICES</h1>
+  <p>Yard Signs · Business Cards — Print-Ready Designs · (782) 446-1992 · etra.ca</p>
+</div>
+
+<!-- ══════════════════════════════════════
+     YARD SIGNS
+══════════════════════════════════════ -->
+
+<div class="section-group">
+  <div class="section-label">Yard Signs — 24" × 18" Corrugated Plastic</div>
+
+  <div class="print-row">
+
+```
+<!-- YS VERSION 1: Dark / Gold -->
+<div class="card-wrap">
+  <div class="yard-sign ys1">
+    <div class="ys1-top-bar"></div>
+    <div class="ys1-right-bar"></div>
+    <div class="ys1-inner">
+      <!-- Logo -->
+      <div class="ys1-logo">
+        <svg class="lm-lg" viewBox="0 0 80 80" fill="none">
+          <polygon points="40,6 74,34 74,74 6,74 6,34" stroke="#C8A96E" stroke-width="5" stroke-linejoin="round" fill="none"/>
+          <line x1="40" y1="6" x2="40" y2="18" stroke="#C8A96E" stroke-width="5"/>
+          <polyline points="22,74 22,52 34,52 34,38 46,38 46,26 58,26 58,74" stroke="#C8A96E" stroke-width="3.5" fill="none" opacity=".6"/>
+          <circle cx="6" cy="74" r="4" fill="#C8A96E"/>
+          <circle cx="74" cy="74" r="4" fill="#C8A96E"/>
+          <circle cx="40" cy="6" r="4" fill="#C8A96E"/>
+        </svg>
+        <div>
+          <div class="ys1-etra">ETRA</div>
+          <div class="ys1-sub">Pro Services</div>
+        </div>
+      </div>
+      <!-- Headline -->
+      <div class="ys1-headline">BUILT<br>TO <span>LAST</span>.</div>
+      <!-- Services -->
+      <div class="ys1-services">Flooring · Vinyl Staircases · Drywall · Siding · Decks · Carpet · Repairs</div>
+      <!-- CTA -->
+      <div class="ys1-cta">
+        <div class="ys1-phone">(782) 446-1992</div>
+        <div class="ys1-right-info">
+          <div class="ys1-web">etra.ca</div>
+          <div class="ys1-loc">Halifax, NS · HRM & Area</div>
+          <div class="ys1-free">Free Quotes Always</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="size-note">Version 1 — Dark / Gold</div>
+</div>
+
+<!-- YS VERSION 2: Gold / CTA -->
+<div class="card-wrap">
+  <div class="yard-sign ys2">
+    <div class="ys2-border"></div>
+    <div class="ys2-bg-word">ETRA</div>
+    <div class="ys2-inner">
+      <!-- Logo -->
+      <div class="ys2-logo">
+        <svg class="lm-lg" viewBox="0 0 80 80" fill="none">
+          <polygon points="40,6 74,34 74,74 6,74 6,34" stroke="#0A0A0A" stroke-width="5" stroke-linejoin="round" fill="none"/>
+          <line x1="40" y1="6" x2="40" y2="18" stroke="#0A0A0A" stroke-width="5"/>
+          <polyline points="22,74 22,52 34,52 34,38 46,38 46,26 58,26 58,74" stroke="#0A0A0A" stroke-width="3.5" fill="none" opacity=".6"/>
+          <circle cx="6" cy="74" r="4" fill="#0A0A0A"/>
+          <circle cx="74" cy="74" r="4" fill="#0A0A0A"/>
+          <circle cx="40" cy="6" r="4" fill="#0A0A0A"/>
+        </svg>
+        <div>
+          <div class="ys2-etra">ETRA</div>
+          <div class="ys2-sub">Pro Services</div>
+        </div>
+      </div>
+      <!-- Headline -->
+      <div class="ys2-headline">FREE<br>QUOTE.</div>
+      <!-- Services -->
+      <div class="ys2-services">Flooring · Vinyl Staircases · Drywall · Siding · Decks · Carpet · Repairs</div>
+      <!-- CTA -->
+      <div class="ys2-cta">
+        <div class="ys2-phone">(782) 446-1992</div>
+        <div class="ys2-right">
+          <div class="ys2-web">etra.ca</div>
+          <div class="ys2-loc">Halifax, NS · HRM & Area</div>
+          <div class="ys2-free">Call or Text — We Respond Fast</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="size-note">Version 2 — Gold / CTA Focus</div>
+</div>
+```
+
+  </div>
+
+  <!-- YS V3 full width split -->
+
+  <div style="margin-top:32px;">
+    <div class="card-wrap" style="align-items:flex-start;">
+      <div class="yard-sign ys3">
+        <div class="ys3-left">
+          <div class="ys3-divider"></div>
+          <div class="ys3-logo">
+            <svg class="lm-lg" viewBox="0 0 80 80" fill="none">
+              <polygon points="40,6 74,34 74,74 6,74 6,34" stroke="#C8A96E" stroke-width="5" stroke-linejoin="round" fill="none"/>
+              <line x1="40" y1="6" x2="40" y2="18" stroke="#C8A96E" stroke-width="5"/>
+              <polyline points="22,74 22,52 34,52 34,38 46,38 46,26 58,26 58,74" stroke="#C8A96E" stroke-width="3.5" fill="none" opacity=".6"/>
+              <circle cx="6" cy="74" r="4" fill="#C8A96E"/>
+              <circle cx="74" cy="74" r="4" fill="#C8A96E"/>
+              <circle cx="40" cy="6" r="4" fill="#C8A96E"/>
+            </svg>
+            <div>
+              <div class="ys3-etra">ETRA</div>
+              <div class="ys3-prosub">Pro Services</div>
+            </div>
+          </div>
+          <div class="ys3-headline">WHERE<br>EVERY <span>STEP</span><br>COUNTS.</div>
+          <div class="ys3-services">
+            Flooring Installs<br>
+            Custom Vinyl Staircases<br>
+            Drywall &amp; Repairs<br>
+            Exterior Siding<br>
+            Decks &amp; Fences<br>
+            Carpet &amp; Carpet Stairs
+          </div>
+        </div>
+        <div class="ys3-right">
+          <div class="ys3-cta-top">
+            <div class="ys3-cta-eyebrow">Free Quote</div>
+            <div class="ys3-phone">(782)<br>446-1992</div>
+          </div>
+          <div class="ys3-cta-mid">
+            <div class="ys3-mid-rule"></div>
+            <div class="ys3-web">etra.ca</div>
+            <div class="ys3-mid-rule"></div>
+          </div>
+          <div class="ys3-cta-bottom">
+            <div class="ys3-tagline">"Where every<br>step counts."</div>
+            <div class="ys3-free">Halifax, NS · HRM</div>
+          </div>
+        </div>
+      </div>
+      <div class="size-note">Version 3 — Split Layout</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     BUSINESS CARDS
+══════════════════════════════════════ -->
+
+<div class="section-group">
+  <div class="section-label">Business Cards — 3.5" × 2" Standard · Front & Back</div>
+
+  <!-- BC VERSION 1 -->
+
+  <div style="margin-bottom:48px;">
+    <div style="font-size:9px;color:#444;letter-spacing:.2em;text-transform:uppercase;margin-bottom:14px;">Version 1 — Dark Premium</div>
+    <div class="print-row">
+      <!-- Front -->
+      <div class="card-wrap">
+        <div class="biz-card bc1">
+          <div class="bc1-inner">
+            <div class="bc1-top">
+              <svg class="lm-sm" viewBox="0 0 80 80" fill="none">
+                <polygon points="40,6 74,34 74,74 6,74 6,34" stroke="#C8A96E" stroke-width="6" stroke-linejoin="round" fill="none"/>
+                <line x1="40" y1="6" x2="40" y2="18" stroke="#C8A96E" stroke-width="6"/>
+                <polyline points="22,74 22,52 34,52 34,38 46,38 46,26 58,26 58,74" stroke="#C8A96E" stroke-width="4" fill="none" opacity=".6"/>
+                <circle cx="6" cy="74" r="5" fill="#C8A96E"/>
+                <circle cx="74" cy="74" r="5" fill="#C8A96E"/>
+                <circle cx="40" cy="6" r="5" fill="#C8A96E"/>
+              </svg>
+              <div>
+                <div class="bc1-etra">ETRA</div>
+                <div class="bc1-sub">Pro Services</div>
+              </div>
+            </div>
+            <div class="bc1-mid">
+              <div class="bc1-name">Your Name Here</div>
+              <div class="bc1-title">Owner · Lead Contractor</div>
+            </div>
+            <div class="bc1-bottom">
+              <div class="bc1-contact">
+                <div class="bc1-info"><em>(782) 446-1992</em></div>
+                <div class="bc1-info"><em>etraproservices@gmail.com</em></div>
+                <div class="bc1-info"><em>etra.ca</em> <span class="bc1-dot">◆</span> Halifax, NS</div>
+              </div>
+              <div class="bc1-tagline">"Where every<br>step counts."</div>
+            </div>
+          </div>
+        </div>
+        <div class="size-note">Front</div>
+      </div>
+      <!-- Back -->
+      <div class="card-wrap">
+        <div class="biz-card bc1-back">
+          <div class="bc1-back-border"></div>
+          <div class="bc1-back-inner">
+            <svg width="48" height="48" viewBox="0 0 80 80" fill="none">
+              <polygon points="40,6 74,34 74,74 6,74 6,34" stroke="#0A0A0A" stroke-width="5" stroke-linejoin="round" fill="none"/>
+              <line x1="40" y1="6" x2="40" y2="18" stroke="#0A0A0A" stroke-width="5"/>
+              <polyline points="22,74 22,52 34,52 34,38 46,38 46,26 58,26 58,74" stroke="#0A0A0A" stroke-width="3.5" fill="none" opacity=".6"/>
+              <circle cx="6" cy="74" r="4" fill="#0A0A0A"/>
+              <circle cx="74" cy="74" r="4" fill="#0A0A0A"/>
+              <circle cx="40" cy="6" r="4" fill="#0A0A0A"/>
+            </svg>
+            <div class="bc1-back-etra">ETRA</div>
+            <div class="bc1-back-sub">Pro Services</div>
+          </div>
+        </div>
+        <div class="size-note">Back</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BC VERSION 2 -->
+
+  <div style="margin-bottom:48px;">
+    <div style="font-size:9px;color:#444;letter-spacing:.2em;text-transform:uppercase;margin-bottom:14px;">Version 2 — Split Dark / Light</div>
+    <div class="print-row">
+      <!-- Front -->
+      <div class="card-wrap">
+        <div class="biz-card bc2">
+          <div class="bc2-left">
+            <div>
+              <div class="bc2-etra">ETRA</div>
+              <div class="bc2-prosub">Pro Services</div>
+            </div>
+            <div class="bc2-tagline-left">"Where every<br>step counts."</div>
+          </div>
+          <div class="bc2-right">
+            <div>
+              <div class="bc2-name">Your Name Here</div>
+              <div class="bc2-title">Owner · Lead Contractor</div>
+            </div>
+            <div class="bc2-contact">
+              <div class="bc2-info"><strong>(782) 446-1992</strong></div>
+              <div class="bc2-info">etraproservices@gmail.com</div>
+              <div class="bc2-info"><strong>etra.ca</strong></div>
+              <div class="bc2-info">Halifax, NS · HRM &amp; Area</div>
+            </div>
+          </div>
+        </div>
+        <div class="size-note">Front</div>
+      </div>
+      <!-- Back -->
+      <div class="card-wrap">
+        <div class="biz-card bc2-back">
+          <div class="bc2-back-inner">
+            <div class="bc2-back-rule-top"></div>
+            <svg width="44" height="44" viewBox="0 0 80 80" fill="none">
+              <polygon points="40,6 74,34 74,74 6,74 6,34" stroke="#C8A96E" stroke-width="5" stroke-linejoin="round" fill="none"/>
+              <line x1="40" y1="6" x2="40" y2="18" stroke="#C8A96E" stroke-width="5"/>
+              <polyline points="22,74 22,52 34,52 34,38 46,38 46,26 58,26 58,74" stroke="#C8A96E" stroke-width="3.5" fill="none" opacity=".6"/>
+              <circle cx="6" cy="74" r="4" fill="#C8A96E"/>
+              <circle cx="74" cy="74" r="4" fill="#C8A96E"/>
+              <circle cx="40" cy="6" r="4" fill="#C8A96E"/>
+            </svg>
+            <div class="bc2-back-etra">ETRA</div>
+            <div class="bc2-back-sub">Pro Services</div>
+            <div class="bc2-back-rule-bot"></div>
+            <div class="bc2-back-contact">(782) 446-1992 · etra.ca</div>
+          </div>
+        </div>
+        <div class="size-note">Back</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BC VERSION 3 -->
+
+  <div>
+    <div style="font-size:9px;color:#444;letter-spacing:.2em;text-transform:uppercase;margin-bottom:14px;">Version 3 — Gold Front</div>
+    <div class="print-row">
+      <!-- Front -->
+      <div class="card-wrap">
+        <div class="biz-card bc3">
+          <div class="bc3-inner">
+            <div class="bc3-top">
+              <svg class="lm-sm" viewBox="0 0 80 80" fill="none">
+                <polygon points="40,6 74,34 74,74 6,74 6,34" stroke="#0A0A0A" stroke-width="6" stroke-linejoin="round" fill="none"/>
+                <line x1="40" y1="6" x2="40" y2="18" stroke="#0A0A0A" stroke-width="6"/>
+                <polyline points="22,74 22,52 34,52 34,38 46,38 46,26 58,26 58,74" stroke="#0A0A0A" stroke-width="4" fill="none" opacity=".6"/>
+                <circle cx="6" cy="74" r="5" fill="#0A0A0A"/>
+                <circle cx="74" cy="74" r="5" fill="#0A0A0A"/>
+                <circle cx="40" cy="6" r="5" fill="#0A0A0A"/>
+              </svg>
+              <div>
+                <div class="bc3-etra">ETRA</div>
+                <div class="bc3-sub">Pro Services</div>
+              </div>
+            </div>
+            <div class="bc3-mid">
+              <div class="bc3-name">Your Name Here</div>
+              <div class="bc3-title">Owner · Lead Contractor</div>
+            </div>
+            <div class="bc3-bottom">
+              <div class="bc3-contact">
+                <div class="bc3-info"><strong>(782) 446-1992</strong></div>
+                <div class="bc3-info">etraproservices@gmail.com</div>
+                <div class="bc3-info"><strong>etra.ca</strong> · Halifax, NS</div>
+              </div>
+              <div class="bc3-tagline">"Where every<br>step counts."</div>
+            </div>
+          </div>
+        </div>
+        <div class="size-note">Front</div>
+      </div>
+      <!-- Back -->
+      <div class="card-wrap">
+        <div class="biz-card bc3-back">
+          <div class="bc3-back-inner">
+            <div class="bc3-back-etra">ETRA</div>
+            <div class="bc3-back-sub">Pro Services</div>
+            <div class="bc3-back-rule"></div>
+            <div class="bc3-back-web">etra.ca</div>
+            <div class="bc3-back-phone">(782) 446-1992</div>
+          </div>
+        </div>
+        <div class="size-note">Back</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRINT NOTES -->
+
+<div class="print-notes">
+  <h3>Print Notes</h3>
+  <ul>
+    <li><strong style="color:var(--mist);">Yard Signs</strong> — 24"×18" corrugated plastic with H-stake. Full bleed, 4-colour process. Order from GotPrint, Vistaprint, BuildASign, or any local print shop.</li>
+    <li><strong style="color:var(--mist);">Business Cards</strong> — 3.5"×2" standard size. 16pt card stock minimum. Soft-touch matte laminate recommended for the dark versions. Full bleed with 0.125" bleed on all sides.</li>
+    <li><strong style="color:var(--mist);">Fonts</strong> — Bebas Neue (display/headlines), Barlow (body), Playfair Display (italic accents). All free on Google Fonts.</li>
+    <li><strong style="color:var(--mist);">Brand Colours</strong> — Brushed Gold #C8A96E · Dark Gold #9B7840 · Obsidian #0A0A0A · Cream #F0EBE3.</li>
+    <li><strong style="color:var(--mist);">For final print files</strong> — Export as PDF with 0.125" bleed, embedded fonts, 300 DPI minimum. A designer or print shop can convert from this HTML reference.</li>
+  </ul>
+</div>
+
+</body>
+</html>
